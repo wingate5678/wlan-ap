@@ -1,0 +1,12 @@
+diff -Naur 09cba788ef5680e3e5b9deaa376da8d6bc13a7ec.orig/src/hsl/phy/hsl_phy.c 09cba788ef5680e3e5b9deaa376da8d6bc13a7ec/src/hsl/phy/hsl_phy.c
+--- 09cba788ef5680e3e5b9deaa376da8d6bc13a7ec.orig/src/hsl/phy/hsl_phy.c	2024-06-06 11:30:45.328121000 +0800
++++ 09cba788ef5680e3e5b9deaa376da8d6bc13a7ec/src/hsl/phy/hsl_phy.c	2024-07-09 15:03:08.757249428 +0800
+@@ -810,7 +810,7 @@
+ 	*phydev = mdiobus_get_phy(miibus, phy_addr);
+ 	if(*phydev == NULL)
+ 	{
+-		SSDK_ERROR("phy_addr %d phydev is NULL\n", phy_addr);
++//		SSDK_ERROR("phy_addr %d phydev is NULL\n", phy_addr);
+ 		return SW_NOT_INITIALIZED;
+ 	}
+ 	pdev_addr = (*phydev)->mdio.addr;
