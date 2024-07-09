@@ -24,4 +24,4 @@ cd -
 
 echo "### Building image ..."
 cd $BUILD_DIR
-make -j$(nproc) V=s
+make -j8 V=s
